@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { cities, services } from "@/data/cities";
 import { Heart, MapPin, Phone, Mail } from "lucide-react";
+import Logo from "./Logo";
 
 export default function Footer() {
   return (
@@ -12,13 +13,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold text-sm">
-                B
-              </div>
-              <span className="text-lg font-bold text-white">
-                BookMyMoment<span className="text-primary">.in</span>
-              </span>
+            <Link href="/" className="flex items-center mb-4">
+              <Logo size="lg" />
             </Link>
             <p className="text-sm text-muted leading-relaxed mb-6">
               India&apos;s premium romantic celebration platform. Private venues,

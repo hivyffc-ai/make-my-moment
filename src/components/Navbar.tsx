@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Menu, X, MapPin, ChevronDown } from "lucide-react";
 import { cities } from "@/data/cities";
+import Logo from "./Logo";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -26,13 +27,8 @@ export default function Navbar() {
     >
       <div className="mx-auto max-w-6xl px-5 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5">
-          <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center text-white font-bold text-sm">
-            B
-          </div>
-          <span className="text-base font-semibold text-white tracking-tight">
-            BookMyMoment<span className="text-primary">.in</span>
-          </span>
+        <Link href="/" className="flex items-center">
+          <Logo size="lg" />
         </Link>
 
         {/* Desktop Links */}
