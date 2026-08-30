@@ -1,0 +1,86 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppFloat from '../components/WhatsAppFloat.astro';
+import { siteConfig, cities } from '../lib/config';
+---
+<Layout
+  title="About BookMyMoment.in | India's Premium Private Celebration Platform"
+  description="Learn about BookMyMoment.in — India's premium platform for private romantic celebrations. We connect couples with exclusive venues across India for candlelight dinners, proposals & more."
+  canonical="https://bookmymoment.in/about/"
+  breadcrumbs={[{ name: "Home", url: "https://bookmymoment.in" }, { name: "About", url: "https://bookmymoment.in/about/" }]}
+>
+  <Header />
+  <main class="pt-24">
+
+    <section class="py-16 bg-gradient-to-br from-rose-50 via-white to-amber-50">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14">
+          <h1 class="font-serif text-4xl sm:text-5xl font-bold text-stone-900 mb-4">
+            About <span class="gradient-text">BookMyMoment</span>
+          </h1>
+          <p class="text-stone-500 text-lg max-w-2xl mx-auto leading-relaxed">
+            India's premium platform for private romantic celebrations — connecting couples with extraordinary venues and experiences.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+          <div>
+            <h2 class="font-serif text-3xl font-bold text-stone-900 mb-5">Our Mission</h2>
+            <p class="text-stone-600 leading-relaxed mb-4">
+              BookMyMoment.in was built on a simple belief: that every important moment in your life deserves a perfectly crafted setting. We partner with India's finest private celebration venues to give couples, families and friends experiences they'll cherish forever.
+            </p>
+            <p class="text-stone-600 leading-relaxed mb-4">
+              From intimate candlelight dinners to grand proposals, from surprise birthdays to pre-wedding shoots — our platform makes it effortless to discover, compare and book the ideal celebration experience in your city.
+            </p>
+            <p class="text-stone-600 leading-relaxed">
+              Currently live in Vadodara and Surat, with more cities launching soon across India.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            {[
+              { val: '6,000+', label: 'Couples Served' },
+              { val: '4.9★', label: 'Average Rating' },
+              { val: '2', label: 'Cities Live' },
+              { val: '13+', label: 'Unique Setups' },
+            ].map(s => (
+              <div class="glass rounded-2xl p-6 text-center card-hover border border-stone-100">
+                <div class="font-serif text-3xl font-bold gradient-text mb-1">{s.val}</div>
+                <p class="text-stone-500 text-sm">{s.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <!-- Our Venues -->
+        <h2 class="font-serif text-3xl font-bold text-stone-900 text-center mb-8">Our Partner Venues</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {cities.map(city => (
+            <a href={`/${city.slug}/`} class="glass rounded-2xl p-6 card-hover border border-stone-100 group">
+              <div class="flex items-center gap-4 mb-4">
+                <div class="text-4xl">{city.emoji}</div>
+                <div>
+                  <h3 class="font-serif text-xl font-bold text-stone-900 group-hover:text-primary transition-colors">{city.venue}</h3>
+                  <p class="text-stone-400 text-sm">{city.name}, {city.state}</p>
+                </div>
+              </div>
+              <p class="text-stone-500 text-sm mb-4 leading-relaxed">{city.tagline}</p>
+              <div class="flex flex-wrap gap-2">
+                {city.highlights.map(h => (
+                  <span class="text-xs bg-stone-50 border border-stone-100 text-stone-600 px-2.5 py-1 rounded-full">{h}</span>
+                ))}
+              </div>
+              <div class="mt-4 pt-4 border-t border-stone-100 flex items-center justify-between">
+                <span class="text-xs text-stone-400">{city.packages.length} packages · from ₹{city.minPrice.toLocaleString('en-IN')}</span>
+                <span class="text-primary text-sm font-semibold group-hover:underline">View →</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+  <WhatsAppFloat />
+</Layout>

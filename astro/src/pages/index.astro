@@ -1,0 +1,237 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppFloat from '../components/WhatsAppFloat.astro';
+import { siteConfig, cities, services } from '../lib/config';
+---
+
+<Layout
+  title="BookMyMoment.in — Premium Private Celebrations in Vadodara & Surat"
+  description="India's premium platform for private romantic celebrations. Candlelight dinners, birthday surprises, proposals & anniversary setups in Vadodara (Friends Factory Cafe) and Surat (HIVY). From ₹4,700."
+  canonical="https://bookmymoment.in"
+  faqs={[
+    { q: "What cities does BookMyMoment.in serve?", a: "We currently serve Vadodara (Friends Factory Cafe) and Surat (HIVY - Place for Celebrations), with more cities coming soon across India." },
+    { q: "What types of celebrations can I book?", a: "We offer Birthday Surprises, Anniversary Dinners, Proposals, Candlelight Dinners, Surprise Dates, Pre-Wedding Shoots, Baby Showers, and Valentine's Week packages." },
+    { q: "How do I book a celebration?", a: "Simply WhatsApp us at +91 7487888730 (for Vadodara) or +91 9727027278 (for Surat) with your preferred date, occasion, and package. We confirm instantly." },
+    { q: "What is the starting price for celebrations?", a: "Packages start from ₹4,700 in Vadodara and ₹5,100 in Surat. All packages include private venue, 3-hour booking, decorations, cake, and music." },
+    { q: "Are the celebrations completely private?", a: "Yes! Every celebration is 100% private — exclusively yours with no other guests. You get the full venue to yourself." },
+  ]}
+>
+  <Header />
+  <main class="pt-20">
+
+    <!-- Hero -->
+    <section class="relative py-20 sm:py-28 overflow-hidden bg-gradient-to-br from-rose-50 via-white to-amber-50">
+      <div class="absolute inset-0 opacity-30" style="background-image: radial-gradient(circle at 20% 50%, #e11d48 0%, transparent 50%), radial-gradient(circle at 80% 20%, #f59e0b 0%, transparent 50%)"></div>
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center max-w-3xl mx-auto">
+          <div class="inline-flex items-center gap-2 bg-white border border-rose-100 text-rose-700 text-xs font-semibold px-4 py-1.5 rounded-full mb-6 shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+            Now live in {cities.length} cities · Expanding to 20+
+          </div>
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-stone-900 leading-tight mb-5">
+            Book Your <span class="gradient-text">Moment</span> Perfectly
+          </h1>
+          <p class="text-stone-500 text-lg sm:text-xl leading-relaxed mb-8 max-w-2xl mx-auto">
+            India's premium platform for private romantic celebrations. Candlelight dinners, birthday surprises, proposals & more — in stunning, exclusive venues.
+          </p>
+          <div class="flex flex-wrap gap-4 justify-center mb-10">
+            {cities.map(city => (
+              <a
+                href={`/${city.slug}/`}
+                class="inline-flex items-center gap-2 bg-white border border-rose-200 text-stone-800 font-semibold px-6 py-3.5 rounded-xl hover:border-rose-400 hover:text-primary transition-all shadow-sm card-hover text-sm"
+              >
+                <span class="text-lg">{city.emoji}</span>
+                <div class="text-left">
+                  <div>{city.name}</div>
+                  <div class="text-xs text-stone-400 font-normal">from ₹{city.minPrice.toLocaleString('en-IN')}</div>
+                </div>
+              </a>
+            ))}
+          </div>
+          <div class="flex flex-wrap justify-center gap-x-8 gap-y-2 text-stone-400 text-xs">
+            <span>⭐ 4.9★ Rating</span>
+            <span>👥 6,000+ Couples Served</span>
+            <span>🔒 100% Private Venues</span>
+            <span>⚡ Instant WhatsApp Booking</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cities -->
+    <section class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 mb-3">
+            Choose Your <span class="gradient-text">City</span>
+          </h2>
+          <p class="text-stone-500 max-w-xl mx-auto">Each city features a handpicked premium venue with exclusive romantic celebration setups</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {cities.map((city, idx) => (
+            <a href={`/${city.slug}/`} class="group block glass rounded-3xl overflow-hidden card-hover border border-stone-100">
+              <div class={`h-48 flex items-center justify-center text-7xl ${idx === 0 ? 'bg-gradient-to-br from-amber-50 to-orange-100' : 'bg-gradient-to-br from-rose-50 to-pink-100'}`}>
+                {city.emoji}
+              </div>
+              <div class="p-6">
+                <div class="flex items-start justify-between mb-3">
+                  <div>
+                    <h3 class="font-serif text-2xl font-bold text-stone-900">{city.name}, {city.state}</h3>
+                    <p class="text-sm text-stone-500">{city.venue}</p>
+                  </div>
+                  <div class="text-right">
+                    <div class="text-xs text-stone-400">from</div>
+                    <div class="font-bold text-stone-900 text-lg">₹{city.minPrice.toLocaleString('en-IN')}</div>
+                  </div>
+                </div>
+                <p class="text-stone-500 text-sm mb-4 leading-relaxed">{city.tagline}</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  {city.highlights.map(h => (
+                    <span class="text-xs bg-stone-50 border border-stone-100 text-stone-600 px-2.5 py-1 rounded-full">{h}</span>
+                  ))}
+                </div>
+                <div class="flex items-center justify-between pt-3 border-t border-stone-100">
+                  <span class="text-xs text-stone-400">⭐ {city.rating} · {city.reviewCount} reviews · {city.couplesServed} couples</span>
+                  <span class="text-primary text-sm font-semibold group-hover:gap-2 flex items-center gap-1 transition-all">
+                    View Packages →
+                  </span>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-20 bg-gradient-to-br from-stone-50 via-white to-rose-50">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 mb-3">How It Works</h2>
+          <p class="text-stone-500">3 simple steps to your perfect celebration</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          {[
+            { step: '01', icon: '📍', title: 'Choose Your City', desc: 'Select your city — Vadodara or Surat. Each has a curated premium private venue.' },
+            { step: '02', icon: '✨', title: 'Pick a Package', desc: 'Browse stunning setups from ₹4,700. Rooftop, glass house, themed indoor & more.' },
+            { step: '03', icon: '❤️', title: 'Celebrate & Cherish', desc: 'Show up and create unforgettable memories. We handle every detail for you.' },
+          ].map(s => (
+            <div class="glass rounded-2xl p-6 text-center card-hover">
+              <div class="font-serif text-4xl font-bold gradient-text mb-2">{s.step}</div>
+              <div class="text-3xl mb-3">{s.icon}</div>
+              <h3 class="font-semibold text-stone-900 mb-2">{s.title}</h3>
+              <p class="text-stone-500 text-sm leading-relaxed">{s.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 mb-3">Every Occasion, <span class="gradient-text">Perfected</span></h2>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          {services.map(s => (
+            <div class="glass rounded-2xl p-5 card-hover text-center border border-stone-100">
+              <div class="text-3xl mb-3">{s.icon}</div>
+              <h3 class="font-semibold text-stone-900 text-sm mb-1">{s.name}</h3>
+              <p class="text-stone-400 text-xs leading-relaxed">{s.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us -->
+    <section class="py-20 bg-stone-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 mb-3">Why <span class="gradient-text">BookMyMoment</span>?</h2>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+          {[
+            { icon: '🔒', title: '100% Private', desc: 'Exclusively yours — no other guests, no interruptions.' },
+            { icon: '📸', title: 'Instagram-Worthy', desc: 'Professional decor with fairy lights and photo-ready setups.' },
+            { icon: '⏰', title: '3-Hour Experience', desc: 'Unhurried celebrations — linger, laugh, live the moment.' },
+            { icon: '👥', title: '6,000+ Couples', desc: 'Trusted across Gujarat. 4.9 stars on Google.' },
+          ].map(f => (
+            <div class="glass rounded-2xl p-5 card-hover border border-stone-100">
+              <div class="text-3xl mb-3">{f.icon}</div>
+              <h3 class="font-semibold text-stone-900 text-sm mb-1">{f.title}</h3>
+              <p class="text-stone-500 text-xs leading-relaxed">{f.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-serif text-3xl font-bold text-stone-900 text-center mb-10">Frequently Asked Questions</h2>
+        <div class="space-y-3" id="faq-accordion">
+          {[
+            { q: "What cities does BookMyMoment.in serve?", a: `We currently serve Vadodara (Friends Factory Cafe) and Surat (HIVY - Place for Celebrations). More cities coming soon!` },
+            { q: "What types of celebrations can I book?", a: "Birthday Surprises, Anniversary Dinners, Proposals, Candlelight Dinners, Surprise Dates, Pre-Wedding Shoots, Baby Showers, and Valentine's Week." },
+            { q: "How do I book?", a: "WhatsApp us with your preferred date, occasion, and package. We confirm instantly with no advance payment required." },
+            { q: "What's the price range?", a: "Packages start from ₹4,700 in Vadodara and ₹5,100 in Surat. All include private venue, decorations, cake, and music." },
+            { q: "Are venues 100% private?", a: "Absolutely. Every celebration is exclusively yours — no other guests at any point during your booking." },
+          ].map((faq, idx) => (
+            <div class="glass rounded-xl overflow-hidden border border-stone-100">
+              <button class="faq-btn w-full text-left px-5 py-4 flex items-start justify-between gap-3 font-semibold text-stone-900 text-sm hover:text-primary transition-colors" aria-expanded="false">
+                <span>{faq.q}</span>
+                <span class="faq-icon text-lg text-primary flex-shrink-0">+</span>
+              </button>
+              <div class="faq-answer hidden px-5 pb-4">
+                <p class="text-stone-600 text-sm leading-relaxed">{faq.a}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-gradient-to-br from-rose-600 to-rose-800 text-white text-center">
+      <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-4">Ready to Create Magic?</h2>
+        <p class="text-rose-200 mb-8 text-lg">Choose your city and let us create an unforgettable celebration for you and your loved one.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          {cities.map(city => (
+            <a href={`/${city.slug}/`}
+              class="inline-flex items-center justify-center gap-2 bg-white text-rose-700 font-semibold px-8 py-4 rounded-xl hover:bg-rose-50 transition-colors text-sm"
+            >
+              {city.emoji} Explore {city.name}
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+  <WhatsAppFloat />
+</Layout>
+
+<script>
+  document.querySelectorAll('.faq-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const answer = btn.nextElementSibling as HTMLElement;
+      const icon = btn.querySelector('.faq-icon') as HTMLElement;
+      const isOpen = !answer.classList.contains('hidden');
+      document.querySelectorAll('.faq-answer').forEach(a => a.classList.add('hidden'));
+      document.querySelectorAll('.faq-icon').forEach(i => { (i as HTMLElement).textContent = '+'; });
+      document.querySelectorAll('.faq-btn').forEach(b => b.setAttribute('aria-expanded', 'false'));
+      if (!isOpen) {
+        answer.classList.remove('hidden');
+        icon.textContent = '−';
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>

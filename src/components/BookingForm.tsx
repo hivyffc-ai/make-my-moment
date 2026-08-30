@@ -67,6 +67,25 @@ export default function BookingForm({ defaultCity, defaultPackage }: Props) {
 
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(lines)}`;
     window.open(url, "_blank", "noopener,noreferrer");
+
+    fetch(`${process.env.NEXT_PUBLIC_CRM_URL}/api/leads/submit`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name,
+        phone,
+        occasion_type: occasion || "other",
+        preferred_date: date || undefined,
+        outlet: city?.name || selectedCity || undefined,
+        lead_source: "website",
+        enquiry_channel: "website",
+        notes: [
+          partnerName ? `Partner: ${partnerName}` : "",
+          selectedPackage ? `Package: ${selectedPackage}` : "",
+          time ? `Time: ${time}` : "",
+        ].filter(Boolean).join(" | ") || undefined,
+      }),
+    }).catch(() => {});
   };
 
   return (
