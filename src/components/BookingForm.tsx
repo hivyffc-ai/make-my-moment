@@ -68,7 +68,7 @@ export default function BookingForm({ defaultCity, defaultPackage }: Props) {
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(lines)}`;
     window.open(url, "_blank", "noopener,noreferrer");
 
-    fetch(`${process.env.NEXT_PUBLIC_CRM_URL}/api/leads/submit`, {
+    fetch(`${process.env.NEXT_PUBLIC_CRM_URL || "https://crm-theta-plum-25.vercel.app"}/api/leads/submit`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
