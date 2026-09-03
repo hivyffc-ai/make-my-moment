@@ -57,7 +57,7 @@ export const cities: City[] = [
     slug: "vadodara",
     name: "Vadodara",
     state: "Gujarat",
-    heroImage: "/images/vadodara-hero.jpg",
+    heroImage: "/images/ffc-hero.webp",
     venue: {
       name: "Friends Factory Cafe",
       brandSlug: "friends-factory",
@@ -163,7 +163,7 @@ export const cities: City[] = [
     slug: "surat",
     name: "Surat",
     state: "Gujarat",
-    heroImage: "/images/surat-hero.jpg",
+    heroImage: "/images/hivy-hero.webp",
     venue: {
       name: "HIVY - Place for Celebrations",
       brandSlug: "hivy",

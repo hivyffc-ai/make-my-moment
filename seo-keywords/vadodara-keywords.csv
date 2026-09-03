@@ -326,7 +326,6 @@ rooftop dinner date vadodara,rooftop setup,medium
 rooftop surprise vadodara,rooftop setup,medium
 rooftop birthday vadodara,rooftop setup,medium
 rooftop anniversary vadodara,rooftop setup,medium
-rooftop date night vadodara,rooftop setup,medium
 rooftop dinner gotri vadodara,rooftop setup,medium
 rooftop dinner sevasi vadodara,rooftop setup,medium
 glass house dinner vadodara,glass house setup,short
@@ -358,9 +357,6 @@ glass house dinner tonight vadodara,glass house setup,medium
 glass house dinner today vadodara,glass house setup,medium
 glass house dinner date vadodara,glass house setup,medium
 glass house surprise vadodara,glass house setup,medium
-glass house birthday vadodara,glass house setup,medium
-glass house anniversary vadodara,glass house setup,medium
-glass house date night vadodara,glass house setup,medium
 glass house dinner gotri vadodara,glass house setup,medium
 private celebration vadodara,private celebration,short
 private dining vadodara,private celebration,short
@@ -590,13 +586,9 @@ graduation celebration vadodara,seasonal,medium
 bride to be party vadodara,seasonal,medium
 bachelorette party vadodara,seasonal,short
 candlelight dinner alkapuri vadodara,locality,medium
-birthday surprise gotri vadodara,locality,medium
 romantic dinner alkapuri vadodara,locality,medium
 celebration gotri vadodara,locality,short
 private dining gotri vadodara,locality,medium
-rooftop dinner gotri vadodara,locality,medium
-anniversary celebration gotri vadodara,locality,medium
-proposal setup gotri vadodara,locality,medium
 couple dinner gotri vadodara,locality,medium
 surprise date gotri vadodara,locality,medium
 celebration sevasi vadodara,locality,short
@@ -688,8 +680,6 @@ romantic dinner price vadodara,pricing,medium
 private dining price vadodara,pricing,medium
 surprise setup price vadodara,pricing,medium
 celebration setup price vadodara,pricing,medium
-rooftop dinner price vadodara,pricing,medium
-glass house dinner price vadodara,pricing,medium
 candlelight dinner review vadodara,review,medium
 birthday surprise review vadodara,review,medium
 friends factory cafe reviews,review,medium
@@ -719,10 +709,6 @@ romantic rooftop anniversary vadodara,combo,medium
 romantic glass house anniversary vadodara,combo,medium
 private rooftop celebration vadodara,combo,medium
 private glass house celebration vadodara,combo,medium
-rooftop pre wedding shoot vadodara,combo,medium
-glass house pre wedding shoot vadodara,combo,medium
-rooftop baby shower vadodara,combo,medium
-glass house baby shower vadodara,combo,medium
 rooftop valentine dinner vadodara,combo,medium
 glass house valentine dinner vadodara,combo,medium
 private rooftop birthday vadodara,combo,medium
@@ -777,7 +763,6 @@ surprise for two vadodara,intent,medium
 evening for two vadodara,intent,medium
 night for two vadodara,intent,medium
 date for two vadodara,intent,short
-romantic evening vadodara,intent,short
 special evening vadodara,intent,short
 magical evening vadodara,intent,short
 memorable evening vadodara,intent,short
@@ -811,7 +796,6 @@ date night near gotri vadodara,locality intent,medium
 couple dinner near gotri vadodara,locality intent,medium
 romantic setup near gotri vadodara,locality intent,medium
 celebration near sevasi vadodara,locality intent,medium
-midnight birthday surprise vadodara,midnight,medium
 midnight anniversary surprise vadodara,midnight,medium
 midnight cake cutting vadodara,midnight,medium
 midnight romantic surprise vadodara,midnight,medium
@@ -837,8 +821,6 @@ celebration 7000 vadodara,price specific,medium
 birthday surprise 5000 vadodara,price specific,medium
 anniversary celebration 5000 vadodara,price specific,medium
 romantic dinner 5000 vadodara,price specific,medium
-surprise under 5000 vadodara,price specific,medium
-dinner under 5000 vadodara,price specific,medium
 celebration package 4700 vadodara,price specific,medium
 celebration package 5100 vadodara,price specific,medium
 celebration package 5500 vadodara,price specific,medium
@@ -852,7 +834,6 @@ things to do with partner vadodara,discovery,medium
 couple things to do vadodara,discovery,medium
 date ideas tonight vadodara,discovery,medium
 weekend date ideas vadodara,discovery,medium
-unique date ideas vadodara,discovery,medium
 romantic weekend ideas vadodara,discovery,medium
 weekend plans couple vadodara,discovery,medium
 evening plans couple vadodara,discovery,medium
@@ -863,7 +844,6 @@ how to celebrate anniversary vadodara,discovery,medium
 unique celebration vadodara,discovery,short
 creative celebration vadodara,discovery,short
 different celebration vadodara,discovery,short
-special celebration vadodara,discovery,short
 exclusive celebration vadodara,discovery,short
 private 100 percent celebration vadodara,discovery,medium
 instagrammable celebration vadodara,discovery,medium
@@ -877,7 +857,6 @@ best celebration pics vadodara,discovery,medium
 couple pics vadodara,discovery,short
 couple photos vadodara,discovery,short
 celebration with champagne vadodara,feature,medium
-celebration with welcome drink vadodara,feature,medium
 celebration with romantic music vadodara,feature,medium
 celebration with photo decor vadodara,feature,medium
 private 3 hour booking vadodara,feature,medium
@@ -887,7 +866,6 @@ private 3 hour booking vadodara,feature,medium
 all inclusive celebration vadodara,feature,medium
 celebration with everything included vadodara,feature,medium
 decorated dinner vadodara,feature,medium
-decorated celebration vadodara,feature,medium
 themed celebration vadodara,feature,short
 themed dinner vadodara,feature,short
 themed setup vadodara,feature,short
@@ -935,7 +913,6 @@ surprise dinner husband vadodara,combo service,medium
 surprise dinner wife vadodara,combo service,medium
 surprise dinner boyfriend vadodara,combo service,medium
 surprise dinner girlfriend vadodara,combo service,medium
-couple candlelight dinner vadodara,combo service,medium
 couple romantic dinner vadodara,combo service,medium
 couple celebration dinner vadodara,combo service,medium
 couple private dinner vadodara,combo service,medium
@@ -944,23 +921,18 @@ anniversary with candlelight dinner vadodara,combo service,medium
 proposal with candlelight dinner vadodara,combo service,medium
 date night with candlelight dinner vadodara,combo service,medium
 birthday with decoration vadodara,combo service,medium
-anniversary with decoration vadodara,combo service,medium
-proposal with decoration vadodara,combo service,medium
 date night with decoration vadodara,combo service,medium
 private birthday dinner vadodara,combo service,medium
-private anniversary dinner vadodara,combo service,medium
 private proposal dinner vadodara,combo service,medium
 private couple dinner vadodara,combo service,medium
 rooftop private dinner vadodara,combo service,medium
 glass house private dinner vadodara,combo service,medium
 intimate dinner vadodara,intimate,short
-intimate celebration vadodara,intimate,short
 intimate birthday vadodara,intimate,short
 intimate anniversary vadodara,intimate,short
 intimate proposal vadodara,intimate,short
 intimate date vadodara,intimate,short
 exclusive dinner vadodara,intimate,short
-exclusive celebration vadodara,intimate,short
 exclusive birthday vadodara,intimate,short
 exclusive anniversary vadodara,intimate,short
 exclusive date vadodara,intimate,short
@@ -968,7 +940,6 @@ cozy dinner vadodara,intimate,short
 cozy celebration vadodara,intimate,short
 cozy date night vadodara,intimate,short
 special dinner vadodara,intimate,short
-special celebration vadodara,intimate,short
 memorable dinner vadodara,intimate,short
 unforgettable celebration vadodara,intimate,medium
 magical celebration vadodara,intimate,short
