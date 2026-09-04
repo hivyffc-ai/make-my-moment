@@ -95,7 +95,7 @@ export const cities: City[] = [
         },
         {
           slug: "golden-promise-glass-house",
-          name: "Golden Promise Glass House",
+          name: "Golden Promise Glass House (Indoor)",
           setupNumber: 3,
           description: "Step into a radiant space where every moment glows with love, warmth, and elegance",
           price: 6000,
@@ -105,7 +105,7 @@ export const cities: City[] = [
         },
         {
           slug: "moonlit-romance-experience",
-          name: "Moonlit Romance Experience",
+          name: "Moonlit Romance Experience (Indoor)",
           setupNumber: 4,
           description: "Step into a serene night where love unfolds beneath a glowing moon and shimmering city lights",
           price: 5100,
@@ -115,7 +115,7 @@ export const cities: City[] = [
         },
         {
           slug: "the-promise-creative-area",
-          name: "The Promise Creative Area",
+          name: "The Promise Creative Area (Indoor)",
           setupNumber: 5,
           description: "Ignite joy under the stars at The Promise Creative Area — a magical rooftop space designed for unforgettable celebrations",
           price: 4700,
@@ -125,7 +125,7 @@ export const cities: City[] = [
         },
         {
           slug: "timeless-bond-glass-house",
-          name: "Timeless Bond Glass House",
+          name: "Timeless Bond Glass House (Indoor)",
           setupNumber: 6,
           description: "Step into an elegant glass house where love feels calm, pure, and everlasting",
           price: 5700,
@@ -135,7 +135,7 @@ export const cities: City[] = [
         },
         {
           slug: "sweet-together-glass-house",
-          name: "Sweet Together Glass House",
+          name: "Sweet Together Glass House (Indoor)",
           setupNumber: 7,
           description: "Step into a charming space where love feels cozy, laughter is shared, and every moment is sweeter than the last",
           price: 5500,
@@ -145,7 +145,7 @@ export const cities: City[] = [
         },
         {
           slug: "pure-love-glass-house",
-          name: "Pure Love Glass House",
+          name: "Pure Love Glass House (Indoor)",
           setupNumber: 8,
           description: "Welcome to a serene glass house where emotions are honest, moments are gentle, and love is beautifully pure",
           price: 4700,
@@ -181,7 +181,7 @@ export const cities: City[] = [
       packages: [
         {
           slug: "swing-of-love",
-          name: "Swing of LOVE",
+          name: "Swing of LOVE (Indoor)",
           setupNumber: 1,
           description: "Float in love on a dreamy swing setup where romance meets playfulness",
           price: 5100,
@@ -191,7 +191,7 @@ export const cities: City[] = [
         },
         {
           slug: "boho-chic",
-          name: "BoHo Chic",
+          name: "BoHo Chic (Indoor)",
           setupNumber: 2,
           description: "Embrace free-spirited romance in a bohemian paradise filled with warmth and elegance",
           price: 5700,
@@ -201,7 +201,7 @@ export const cities: City[] = [
         },
         {
           slug: "fairy-tale-proposals",
-          name: "Fairy Tale Proposals",
+          name: "Fairy Tale Proposals (Indoor)",
           setupNumber: 3,
           description: "Step into a magical fairytale where dreams come true and love stories begin",
           price: 6300,
@@ -211,7 +211,7 @@ export const cities: City[] = [
         },
         {
           slug: "tent-of-romance",
-          name: "Tent of Romance",
+          name: "Tent of Romance (Indoor)",
           setupNumber: 4,
           description: "Step into a cozy romantic tent where love blooms under soft lights and dreamy décor",
           price: 6500,
@@ -221,7 +221,7 @@ export const cities: City[] = [
         },
         {
           slug: "the-elite-group-setup",
-          name: "Elite Group Setup",
+          name: "Elite Group Setup (Indoor)",
           setupNumber: 5,
           description: "Create a one-of-a-kind proposal experience tailored just for your love story",
           price: 5400,
