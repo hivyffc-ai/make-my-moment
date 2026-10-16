@@ -75,7 +75,7 @@ export const cities: City[] = [
       packages: [
         {
           slug: "forever-us-loveframe-rooftop",
-          name: "Forever Us LoveFrame Rooftop",
+          name: "Setup 1 - Forever Us LoveFrame Rooftop",
           setupNumber: 1,
           description: "Celebrate love in a space where every glance, laugh, and memory is framed against the stunning skyline",
           price: 6900,
@@ -85,7 +85,7 @@ export const cities: City[] = [
         },
         {
           slug: "eternal-love-rooftop-celebration",
-          name: "Eternal Love Rooftop Celebration",
+          name: "Setup 2 - Eternal Love Rooftop Celebration",
           setupNumber: 2,
           description: "Celebrate moments that matter in a rooftop setting where emotions shine as brightly as the city lights below",
           price: 6500,
@@ -94,9 +94,19 @@ export const cities: City[] = [
           features: ["3-Hour Private Booking", "Rooftop Setup", "Celebration Cake", "Romantic Music", "Photo-Ready Décor", "Welcome Drink"],
         },
         {
+          slug: "royal-red",
+          name: "Setup 3 - Royal Red",
+          setupNumber: 3,
+          description: "Experience luxury with royal red velvet drapes, romantic candlelight, beautiful rose petals and an elegant celebration backdrop. Cake & champagne included.",
+          price: 6500,
+          image: "/images/packages/royal-red/cover.webp",
+          galleryImages: buildGallery("royal-red", ["cover.webp", "1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp", "7.webp", "8.webp", "9.webp", "10.webp", "11.webp", "12.webp", "13.webp"]),
+          features: ["3-Hour Private Booking", "Royal Red Velvet Canopy", "Cake & Champagne Included", "Complete Vegetarian Meal", "Romantic Music", "Photo-Ready Décor", "Welcome Drink"],
+        },
+        {
           slug: "golden-promise-glass-house",
           name: "Golden Promise Glass House (Indoor)",
-          setupNumber: 3,
+          setupNumber: 4,
           description: "Step into a radiant space where every moment glows with love, warmth, and elegance",
           price: 6000,
           image: "/images/packages/golden-promise-glass-house/cover.webp",
@@ -106,7 +116,7 @@ export const cities: City[] = [
         {
           slug: "moonlit-romance-experience",
           name: "Moonlit Romance Experience (Indoor)",
-          setupNumber: 4,
+          setupNumber: 5,
           description: "Step into a serene night where love unfolds beneath a glowing moon and shimmering city lights",
           price: 5100,
           image: "/images/packages/moonlit-romance-experience/cover.webp",
@@ -116,7 +126,7 @@ export const cities: City[] = [
         {
           slug: "the-promise-creative-area",
           name: "The Promise Creative Area (Indoor)",
-          setupNumber: 5,
+          setupNumber: 6,
           description: "Ignite joy under the stars at The Promise Creative Area — a magical rooftop space designed for unforgettable celebrations",
           price: 4700,
           image: "/images/packages/the-promise-creative-area/cover.webp",
@@ -126,7 +136,7 @@ export const cities: City[] = [
         {
           slug: "timeless-bond-glass-house",
           name: "Timeless Bond Glass House (Indoor)",
-          setupNumber: 6,
+          setupNumber: 7,
           description: "Step into an elegant glass house where love feels calm, pure, and everlasting",
           price: 5700,
           image: "/images/packages/timeless-bond-glass-house/cover.webp",
@@ -136,7 +146,7 @@ export const cities: City[] = [
         {
           slug: "sweet-together-glass-house",
           name: "Sweet Together Glass House (Indoor)",
-          setupNumber: 7,
+          setupNumber: 8,
           description: "Step into a charming space where love feels cozy, laughter is shared, and every moment is sweeter than the last",
           price: 5500,
           image: "/images/packages/sweet-together-glass-house/cover.webp",
@@ -146,7 +156,7 @@ export const cities: City[] = [
         {
           slug: "pure-love-glass-house",
           name: "Pure Love Glass House (Indoor)",
-          setupNumber: 8,
+          setupNumber: 9,
           description: "Welcome to a serene glass house where emotions are honest, moments are gentle, and love is beautifully pure",
           price: 4700,
           image: "/images/packages/pure-love-glass-house/cover.webp",
