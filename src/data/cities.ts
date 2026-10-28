@@ -98,7 +98,7 @@ export const cities: City[] = [
           name: "Setup 3 - Royal Red",
           setupNumber: 3,
           description: "Experience luxury with royal red velvet drapes, romantic candlelight, beautiful rose petals and an elegant celebration backdrop. Cake & champagne included.",
-          price: 6500,
+          price: 5500,
           image: "/images/packages/royal-red/cover.webp",
           galleryImages: buildGallery("royal-red", ["cover.webp", "1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp", "7.webp", "8.webp", "9.webp", "10.webp", "11.webp", "12.webp", "13.webp"]),
           features: ["3-Hour Private Booking", "Royal Red Velvet Canopy", "Cake & Champagne Included", "Complete Vegetarian Meal", "Romantic Music", "Photo-Ready Décor", "Welcome Drink"],
